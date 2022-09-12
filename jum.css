@@ -9,45 +9,99 @@
     width: 100%;
 }
 #liens{
-    background-color: aqua;
+    background-color: rgb(255, 140, 0);
     width: 100%;
-    height: 25px;
+    height: 50px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+    
+    
+    
+   /*  justify-content: space-between;
+    justify-content: center; */
+
+
+}
+.liens1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    align-items: center;
+    
+
+/*  border: solid black; */
+}
+.liens2{
+display:flex;
+gap: 130px;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
 
-#jumia{
-    background-color: orange;
-    width: 100%;
-    height: 25px;
-    justify-content: center;
-    
+
+p, #lien:hover{
+    color: orangered;
 }
+
+
+#jumia{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    }
+    p, #jumia:hover{
+        color: orangered;
+    }
+    
+    .aaa{
+        color: black;
+    }
+    
+    
+
+    
+    
+
+ 
+
 #centre{
     display: grid;
-    grid-template-columns: 20% 35% 20%;
+    grid-template-columns: 20% 40% 20%;
     grid-template-areas: "left-column center-column right-column";
     width: 100%;
     height: 500px; 
-    border: solid 1px black;
+    /* border: solid 1px black; */
     display:flex;
     justify-content: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: rgb(216, 210, 210);
 }
 #left-column{
     background-color: rgb(253, 249, 249);
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 20%; height:92%;
     justify-content: center;
     margin: 1%;
+    font-size: 16px;
 }
 #center-column{
     background-color: rgb(253, 249, 249);
-    border: 2px solid black;
-    width: 35%; height:92%;
+    /* border: 2px solid black; */
+    width: 45%; height:92%;
     justify-content: center;
     margin: 1%;
 }
 #right-column{
-    background-color: rgb(253, 249, 249);
-    border: 2px solid black;
+    /* background-color: rgb(253, 249, 249); */
+    /* border: 2px solid black; */
     width: 20%; height:92%;
     justify-content: center;
     margin: 1%;
@@ -59,17 +113,35 @@
 .right1,.right2{
     width: 375px;
     height: 220px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
  
+}
+.right1{
+    background-color: white;
 }
 #img{
     width: 90%;
 
 
 }
+.gauche{
+   display: flex; 
+}
+ a span:hover{
+    color:orangered;
+}
+
+#img{
+    width: 100%;
+
+
+
+}
 .slider {
-    height: 50vh;
+    height: 100%;
+    width: 100%;
     position: relative;
+
 }
 .slider img{
     object-fit: cover;
@@ -79,6 +151,8 @@
     top: 0;
     left: 0;
     opacity: 0;
+    
+    
 }
 .slider img.active{
     opacity: 1;
@@ -98,3 +172,83 @@
 .precedent{
     left: 1rem;
 }
+#foot{
+    background-color: rgb(253, 249, 249);
+    /* border: 2px solid black; */
+    width: 35%; height:85%;
+    justify-content: center;
+}
+#liens {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 80px 80px 80px 80px;
+    align-items: start;
+    justify-content: space-between;
+    
+
+  }
+  footer{
+    margin-top: 20px;
+    width: 75%;
+    margin: 10 px auto;
+  }
+ #footer{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    
+    
+ }
+ footer img{
+    height: 110px;
+    margin: 0 auto;
+
+ }
+ .slidecont{
+    overflow:auto;
+    white-space: nowrap;
+ }
+ .imgfooter2{
+    display: none;
+ }
+ .arrow2, .arrow1{
+    background-color: transparent;
+    border: none;
+    max-height: 50px;
+    margin: auto 0;
+ }
+ .arrow2:hover,.arrow1:hover{
+    cursor: pointer;
+ }
+ a{
+    text-decoration: none;
+    
+ }
+ .menu{
+    color:black;
+ }
+ a:hover .menu{
+    color: orangered;
+ }
+ @media screen and (max-width: 800px){
+    #centre{
+        /* display:grid; */
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        
+    }
+    #left-column{
+       border: 2px solid black; 
+        width: 20%; 
+        margin: 1%;
+        float: right;
+        
+    }
+    #centre,  #left-column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    } 
